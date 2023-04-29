@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      let maanden = ["januari", "februari", "maart"];
+      maanden[3] = "april";
+      maanden[4] = "mei";
+      maanden[5] = "juni";
+      maanden.push("juli");
+      maanden.push("augustus", "september", "oktober", "november", "december");
+      let paragraaf = maanden.join(",");
+      document.write(`<p>${paragraaf}</p>`);
+      let lengte = maanden.length;
+      document.write(`<p>Er zijn ${lengte} maanden in de array</p>`);
+      let March = maanden.indexOf("March");
+      document.write(`<p>De maand "March" bevindt zich in de array op positie: ${March}</p>`);
+
+//volgende oefening
+
+      let namen = ["Erik", "Sofie", "Adam", "Zorro"];
+      namen.sort();
+      document.write(`<p>De gesorteerde namen zijn: ${namen}</p>`);
+      let gebruikernaam = prompt("Welke naam wil je zoeken?", "Bert");
+      let positie = namen.indexOf(gebruikernaam);
+      document.write(`<p>De naam ${gebruikernaam} bevindt zich op positie: ${positie}</p>`);
+
+//volgende oefening
+
+      let naamGebruiker = prompt("Wat is je volledige naam (voornaam achternaam)?", "Java Script");
+      let arrayGebruiker = naamGebruiker.split(" ");
+      arrayGebruiker.reverse();
+      let stringGebruiker = arrayGebruiker.join(" ");
+      document.write(`<p>Jouw naam genoteerd als familienaam voornaam is: ${stringGebruiker}</p>`);
+    </script>
+  </body>
+</html>
